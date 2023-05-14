@@ -1,38 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Poppins" , sans-serif;
-    --main-hue:208;
-    --text-color:#000;
-    --main-color:hsl(var(--main-hue),92%,54%);
-    --nav-color:hsl(var(--main-hue),17%,79%);
-    --bg-color:#fff;
-    --light-text-color:#9ca7b6;
-    --main-color-hover:hsl(var(--main-hue),17%,79%);
-    --input-bg:hsla(var(--main-hue),50%,50%,6.5%);
-    --input-bg-hover:hsla(var(--main-hue),50%,50%,14%);
-    --input-text:#8c9aaf;
-    --light-main-color:hsl(var(--main-hue),91%,55%)
+body {
+    font-family: "Poppins", sans-serif;
+    --main-hue: 208;
+    --text-color: #000;
+    --main-color: hsl(var(--main-hue), 92%, 54%);
+    --nav-color: hsl(var(--main-hue), 17%, 79%);
+    --bg-color: #fff;
+    --light-text-color: #9ca7b6;
+    --main-color-hover: hsl(var(--main-hue), 17%, 79%);
+    --input-bg: hsla(var(--main-hue), 50%, 50%, 6.5%);
+    --input-bg-hover: hsla(var(--main-hue), 50%, 50%, 14%);
+    --input-text: #8c9aaf;
+    --light-main-color: hsl(var(--main-hue), 91%, 55%)
 }
 
-a{
+a {
     text-decoration: none;
 }
-header{
+
+header {
     position: absolute;
     width: 100%;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 4;
 }
 
-header .container{
+header .container {
     max-width: 82rem;
     margin: 0 auto;
     padding: 0 1rem;
@@ -41,76 +44,77 @@ header .container{
     align-items: flex-end;
 }
 
-header ul{
+header ul {
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.logo{
-display: flex;
-align-items: center;
-margin-right: 3rem;
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
 }
 
-.logo .images{
+.logo .images {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
-.logo img{
+
+.logo img {
     height: 35px;
     grid-column: 1/2;
     grid-row: 1/2;
     margin-right: 0.8rem;
 }
 
-.logo img.logo-forDark{
+.logo img.logo-forDark {
     opacity: 0;
 }
 
-.logo h2{
+.logo h2 {
     color: var(--text-color);
-    font-size:1.55 rem;
+    font-size: 1.55 rem;
     margin-top: 2px;
 }
 
-.logo h2 span{
+.logo h2 span {
     color: var(--main-color);
 }
 
-.nav-link{
+.nav-link {
     margin-left: 5.5rem;
     padding: 0 1rem;
     font-weight: 600;
     font-size: 1rem;
-    color: hsl(var(--main-hue),17%,79%);
+    color: hsl(var(--main-hue), 17%, 79%);
     transition: 0.3s;
 }
 
-.nav-link:hover{
-    color:var(--main-color);
+.nav-link:hover {
+    color: var(--main-color);
 }
 
-.nav-link.theme-toggle{
-    cursor:pointer;
+.nav-link.theme-toggle {
+    cursor: pointer;
 }
 
-.theme-toggle .fa-moon{
+.theme-toggle .fa-moon {
     display: none;
 }
 
-.theme-toggle .fa-sun{
+.theme-toggle .fa-sun {
     display: inline;
 }
 
-.contact{
+.contact {
     width: 100%;
     overflow: hidden;
     background-color: var(--bg-color);
 }
 
-.contact .container{
+.contact .container {
     height: 100vh;
     min-height: 700px;
     display: grid;
@@ -118,24 +122,24 @@ margin-right: 3rem;
     grid-template-rows: 1fr;
 }
 
-.contact .container > div{
+.contact .container>div {
     grid-column: 1/2;
-    grid-row:1/2;
+    grid-row: 1/2;
 }
 
-.left{
+.left {
     width: 100%;
     max-width: 80rem;
     margin: 0 auto;
     padding: 65px 1.5rem 0;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     position: relative;
     z-index: 3;
 }
 
-.contact-heading h1{
+.contact-heading h1 {
     font-weight: 600;
     color: var(--text-color);
     font-size: 3.5rem;
@@ -144,48 +148,50 @@ margin-right: 3rem;
     margin-bottom: 1.2rem;
 }
 
-.contact-heading h1 span{
+.contact-heading h1 span {
     color: var(--main-color);
 }
 
-.text{
+.text {
     color: var(--light-text-color);
     line-height: 1.1;
     font-size: 1rem;
 }
 
 .text a {
-    color:var(--main-color);
+    color: var(--main-color);
     transition: 0.3s;
 }
 
-.text a:hover{
-    color:var(--main-color-hover);
+.text a:hover {
+    color: var(--main-color-hover);
 }
 
-.form-wrapper{
+.form-wrapper {
     max-width: 32rem;
     /* display: none; */
 }
-.contact-form{
+
+.contact-form {
     display: grid;
     margin-top: 2.55rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     row-gap: 1rem;
 }
 
-.input-wrap{
+.input-wrap {
     position: relative;
 }
-.input-wrap.w-100{
+
+.input-wrap.w-100 {
     grid-column: span 2;
 }
 
-.contact-input{
+.contact-input {
     width: 100%;
     background-color: var(--input-bg);
-    padding: 1.5rem 1.35rem calc(0.75rem - 2px ) 1.35rem;
+    padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
     border: none;
     outline: none;
     font-family: inherit;
@@ -195,14 +201,14 @@ margin-right: 3rem;
     font-size: 0.95rem;
     transition: 0.3s;
     border: 2px solid transparent;
-    box-shadow: 0 0 0 0px hsla(var(--main-hue),92%,54%,0.169);
+    box-shadow: 0 0 0 0px hsla(var(--main-hue), 92%, 54%, 0.169);
 }
 
-.contact-input:hover{
+.contact-input:hover {
     background-color: var(--input-bg-hover);
-} 
+}
 
- .input-wrap label{
+.input-wrap label {
     position: absolute;
     top: 50%;
     left: calc(1.35rem + 2px);
@@ -212,9 +218,9 @@ margin-right: 3rem;
     transition: .25s;
 }
 
-.input-wrap .icon{
+.input-wrap .icon {
     position: absolute;
-    right: calc(1.35rem+2px);
+    right: calc(1.35rem + 2px);
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
@@ -223,44 +229,44 @@ margin-right: 3rem;
     transition: 0.3s;
 }
 
-textarea.contact-input{
+textarea.contact-input {
     resize: none;
     width: 100%;
-    min-height:150px;
+    min-height: 150px;
 
 }
 
-textarea.contact-input ~ label{
+textarea.contact-input~label {
     top: 1.2rem;
     transform: none;
 }
 
-textarea.contact-input ~ .icon{
+textarea.contact-input~.icon {
     top: 1.3rem;
     transform: translateY(-50%);
 }
 
-.input-wrap.focus.contact-input{
+.input-wrap.focus.contact-input {
     background-color: var(--bg-color);
     border: 2px solid var(--light-main-color);
-    box-shadow: 0 0 0 5px hsla(var(--main-hue),91%,55%,0.11);
+    box-shadow: 0 0 0 5px hsla(var(--main-hue), 91%, 55%, 0.11);
 }
 
-.input-wrap.focus label{
+.input-wrap.focus label {
     color: var(--light-main-color);
 }
 
-.input-wrap.focus .icon{
+.input-wrap.focus .icon {
     color: var(--light-main-color);
 }
 
-.input-wrap.not-empty label{
+.input-wrap.not-empty label {
     font-size: 0.66rem;
     top: 0.75rem;
     transform: translateY(0);
 }
 
-.contact-buttons{
+.contact-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
@@ -269,7 +275,7 @@ textarea.contact-input ~ .icon{
     grid-column: span 2;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 1.1rem 2rem;
     background-color: var(--main-color);
@@ -283,23 +289,24 @@ textarea.contact-input ~ .icon{
     transition: 0.3s;
 }
 
-.btn:hover{
-    background-color:var(--main-color-hover);
+.btn:hover {
+    background-color: var(--main-color-hover);
 }
 
-.btn.upload{
+.btn.upload {
     position: relative;
-    background-color:var(--input-bg);
+    background-color: var(--input-bg);
 }
 
-.btn.upload span{
-color:var(--light-text-color);
+.btn.upload span {
+    color: var(--light-text-color);
 }
 
-.btn.upload:hover{
-    background-color:var(--input-bg-hover);
+.btn.upload:hover {
+    background-color: var(--input-bg-hover);
 }
-.btn.upload input{
+
+.btn.upload input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -310,55 +317,45 @@ color:var(--light-text-color);
     opacity: 0;
 }
 
-.right{
+.right {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
     pointer-events: none;
 }
 
-.image-wrapper{
+.image-wrapper {
     position: relative;
     grid-column: 2;
-    /* background-color: green; */
 }
-.image-wrapper .img{
+
+.image-wrapper .img {
     position: absolute;
     height: 130%;
     left: 60%;
     top: 50%;
-    transform: translate(-50%,-50%);
-    /* background-color: var(--bg-color); */
+    transform: translate(-50%, -50%);
 }
 
-.wave-wrap{
+.wave-wrap {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     right: 100%;
-    /* left: 50%; */
-
     background-color: var(--bg-color);
-    /* background-color: green; */
 }
 
-.wave-wrap svg{
+.wave-wrap svg {
     position: absolute;
-    /* background-color: red; */
     height: calc(100% + 10px);
     top: 50%;
     transform: translateY(-50%);
     left: calc(100%-2px);
-    right: -82%;
-    /* background-color: var(--bg-color); */
+    right: -72%;
 }
 
-#wave{
+#wave {
     fill: var(--bg-color);
-    /* fill:blue; */
-    height : 100%;
-    left: 100%;
-    position: absolute;
+    height: 100%;
 }
-

@@ -1,5 +1,6 @@
 const inputs = document.querySelectorAll(".contact-input");
-//Toggle function
+
+//Toggle Function
 
 inputs.forEach((ipt) => {
   ipt.addEventListener("focus", () => {
